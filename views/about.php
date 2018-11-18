@@ -9,13 +9,13 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/et-line-font.css">
-	<link rel="stylesheet" href="css/nivo-lightbox.css">
-	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/animate.min.css">
+	<link rel="stylesheet" href="../css/et-line-font.css">
+	<link rel="stylesheet" href="../css/nivo-lightbox.css">
+	<link rel="stylesheet" href="../css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -104,17 +104,17 @@
 
 
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/nivo-lightbox.min.js"></script>
-<script src="js/jquery.backstretch.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/smoothscroll.js"></script>
+<script src="../js/isotope.js"></script>
+<script src="../js/imagesloaded.min.js"></script>
+<script src="../js/nivo-lightbox.min.js"></script>
+<script src="../js/jquery.backstretch.min.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/custom.js"></script>
 
 </body>
-</html>l>
+</html>>
 
 
