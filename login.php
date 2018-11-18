@@ -1,4 +1,4 @@
-<?php include('config/server.php') ?>
+<?php include('models/server.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +13,7 @@
 	
 	<form method="post" action="login.php">
 
-		<?php include('config/errors.php'); ?>
+		<?php include('models/errors.php'); ?>
 
 		<div class="input-group">
 			<label>Username</label>
