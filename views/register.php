@@ -1,9 +1,9 @@
-<?php include('\docuploader\models\server.php') ?>
+<?php include('../models/server.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Registration</title>
-	<link rel="stylesheet" type="text/css" href="\docuploader\css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 	<div class="header">
@@ -12,7 +12,7 @@
 	
 	<form method="post" action="register.php">
 
-		<?php include('\docupolader\models\errors.php'); ?>
+		<?php include('../models/errors.php'); ?>
 
 		<div class="input-group">
 			<label>Username</label>
