@@ -19,10 +19,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="insert.php">Upload File</a>
+        <a class="nav-link" href="../controllers/insert.php">Upload File</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="\P3\login.php">Sign out</a>
+        <a class="nav-link" href="../views/login.php">Sign out</a>
       </li>
       
       

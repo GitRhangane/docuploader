@@ -36,7 +36,7 @@
 
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "You are now logged in";
-			header('location: File/index.php');
+			header('location:../controllers/index.php');
 		}
 
 	}
@@ -63,7 +63,7 @@
 			if (mysqli_num_rows($results) == 1) {
 				$_SESSION['username'] = $username;
 				$_SESSION['success'] = "You are now logged in";
-				header('location: File/index.php');
+				header('location:../controllers/index.php');
 			}else {
 				array_push($errors, "Wrong username/password combination");
 			}

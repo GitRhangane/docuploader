@@ -3,7 +3,7 @@
 
 	if (!isset($_SESSION['username'])) {
 		$_SESSION['msg'] = "You must log in first";
-		header('location: \P3\login.php');
+		header('location: ../views/login.php');
 	}
 ?>
 <?php  if (isset($_SESSION['username'])) : ?>
@@ -15,7 +15,7 @@
 $dbh = new PDO("mysql:host=localhost;dbname=docuploader","root","");
 if(isset($_POST['btn']))
 {
-    include('\P3\sever.php');
+    include('../models/sever.php');
 	
 	$username =$_SESSION['username'];
 	$name =$_FILES['myfile']['name'];
@@ -28,7 +28,7 @@ if(isset($_POST['btn']))
 	$fileExt = explode('.',$name);
 	$fileActualExt = strtolower(end($fileExt));
 	$allowed = array('doc','docx','xlsx','csv','text');
-	move_uploaded_file($myfile['tmp_name'],'uploads/'.$myfile['name']);
+	move_uploaded_file($myfile['tmp_name'],'../uploads/'.$myfile['name']);
 	
 	
 	$stmt =$dbh->prepare("insert into data values('',?,?,?,?,?,?)");

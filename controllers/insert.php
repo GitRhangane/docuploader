@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>File Uploading</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="../css/stylee.css" type="text/css" />
 </head>
 <body>
 <div id="header">

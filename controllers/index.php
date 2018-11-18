@@ -1,11 +1,11 @@
 <?php
-require 'db.php';
+require '../models/db.php';
 $sql = 'SELECT * FROM data';
 $statement = $connection->prepare($sql);
 $statement->execute();
 $data = $statement->fetchAll(PDO::FETCH_OBJ);
  ?>
-<?php require 'file.php'; ?>
+<?php require '../views/file.php'; ?>
 <div class="container">
   <div class="card mt-5">
     <div class="card-header">
@@ -32,10 +32,10 @@ $data = $statement->fetchAll(PDO::FETCH_OBJ);
 			
             
             <td>
-              <a href="View.php?id=<?= $datas->id ?>" class="btn btn-info">View</a>
-			  <a href="download.php?id=<?= $datas->id ?>" class="btn btn-info">Download</a>
-              <a onclick="return confirm('Are you sure you want to delete this entry?')" href="delete.php?id=<?= $datas->id ?>" class='btn btn-danger'>Delete</a>
-			  <a href="edit.php?id=<?= $datas->id ?>" class='btn btn-danger'>edit</a>
+              <a href="../controllers/View.php?id=<?= $datas->id ?>" class="btn btn-info">View</a>
+			  <a href="../controllers/download.php?id=<?= $datas->id ?>" class="btn btn-info">Download</a>
+              <a onclick="return confirm('Are you sure you want to delete this entry?')" href="../models/delete.php?id=<?= $datas->id ?>" class='btn btn-danger'>Delete</a>
+
             </td>
           </tr>
         <?php endforeach; ?>
@@ -43,4 +43,4 @@ $data = $statement->fetchAll(PDO::FETCH_OBJ);
     </div>
   </div>
 </div>
-<?php require 'footer.php'; ?>
+<?php require '../css/footer.php'; ?>

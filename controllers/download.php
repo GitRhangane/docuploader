@@ -1,5 +1,5 @@
 <?php
-include('db.php');
+include('../models/db.php');
 if(isset($_GET["id"])){
 	
 	$id =$_GET['id'];
