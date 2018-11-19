@@ -33,7 +33,7 @@ $data = $statement->fetchAll(PDO::FETCH_OBJ);
             
             <td>
               <a href="../controllers/View.php?id=<?= $datas->id ?>" class="btn btn-info">View</a>
-			  <a href ="{{$datas['data']}}"download ="{{$datas['data']}}>" class= "btn btn-info">Download</a>
+			  <a href="../controllers/download.php?id=<?= $datas->id ?>" class="btn btn-info">Download</a>
               <a onclick="return confirm('Are you sure you want to delete this entry?')" href="../models/delete.php?id=<?= $datas->id ?>" class='btn btn-danger'>Delete</a>
 
             </td>

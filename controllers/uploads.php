@@ -15,7 +15,7 @@
 $dbh = new PDO("mysql:host=localhost;dbname=docuploader","root","");
 if(isset($_POST['btn']))
 {
-    include('../models/sever.php');
+    include('../models/db.php');
 	
 	$username =$_SESSION['username'];
 	$name =$_FILES['myfile']['name'];
@@ -24,6 +24,7 @@ if(isset($_POST['btn']))
 	$data = file_get_contents($_FILES['myfile']['tmp_name']);
 	$dates = date('Y-m-d H:i:s');
 	$myfile =$_FILES['myfile'];
+	
 	$fileError =$_FILES['myfile']['error'];
 	$fileExt = explode('.',$name);
 	$fileActualExt = strtolower(end($fileExt));
@@ -31,7 +32,7 @@ if(isset($_POST['btn']))
 	move_uploaded_file($myfile['tmp_name'],'../uploads/'.$myfile['name']);
 	
 	
-	$stmt =$dbh->prepare("insert into data values('',?,?,?,?,?,?)");
+	$stmt =$dbh->prepare("insert into data values('',?,?,?,?,?,?,'')");
 	if(in_array($fileActualExt,$allowed))
 	{
 		if($fileError==0)
@@ -45,6 +46,7 @@ if(isset($_POST['btn']))
 	            $stmt->bindParam(4,$size);
 				$stmt->bindParam(5,$data, PDO::PARAM_LOB);
 				$stmt->bindParam(6,$dates);
+				
 				$stmt->execute();
 	            header("Location:index.php");
 			}

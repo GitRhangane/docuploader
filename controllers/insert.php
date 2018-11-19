@@ -10,8 +10,8 @@
 </div>
 <div id="body">
 	<form action="uploads.php" method ="post" enctype ="multipart/form-data" >
-     Choose file: <input type ="file" name="myfile"/>
-     <button name="btn">upload</button>
+     <input type ="file" name="myfile"/>
+     <button name="btn">Upload</button>
     </form>
 </div>
 <div id="footer">

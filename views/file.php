@@ -22,7 +22,7 @@
         <a class="nav-link" href="../controllers/insert.php">Upload File</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../views/login.php">Sign out</a>
+        <a class="nav-link" href="../controllers/login.php">Sign out</a>
       </li>
       
       
